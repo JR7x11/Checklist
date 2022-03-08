@@ -1,0 +1,90 @@
+/* #FCFCEC,#FCFBCA,#FAFB59,#131B42,#393937 */
+
+body {
+  background-color: #fcfcec;
+  color: #131b42;
+}
+
+.input-div {
+  background-color: #131b42;
+  padding: 50px;
+}
+
+.items-div {
+  background-color: #fafb59;
+  padding: 50px;
+}
+
+.btn {
+  background-color: #f8f9fa;
+}
+
+.btn:hover {
+  background-color: #393937;
+}
+
+li {
+  background-color: #f8f9fa;
+  border: 1px solid #131b42;
+  padding: 5px;
+  margin: 10px auto 10px auto;
+  list-style-type: none;
+  border-radius: 4px;
+  width: 80%;
+  position: relative;
+}
+
+ul li.done {
+  text-decoration: line-through;
+}
+
+ul li.done::before {
+  content: "";
+  position: absolute;
+  border-color: #393937;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: -30px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #fcfbca;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-light,
+.bg-light {
+  background-color: #fcfcec;
+}
+
+/* close button */
+.closeButton {
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  color: #ff0095;
+  font-size: large;
+  line-height: 0;
+}
+
+.items-div p {
+  color: #393937;
+  font-style: italic;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fcfbca;
+}
